@@ -1,0 +1,1 @@
+- describe('Responsiveness'... not running in CI/CD. Best guess is it can't write the screenshot folder. The differencify library seems to have a bias for Jest, so next step would be rewriting in Jest, but then we might as well rewrite all the tests in Jest. 

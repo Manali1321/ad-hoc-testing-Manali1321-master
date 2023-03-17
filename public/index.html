@@ -1,0 +1,47 @@
+<!-- Hmm, something's missing here, right off the bat. -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Just the simplest page." />
+    <!-- Hmmm... does jQuery get used anywhere? -->
+    <!-- <script src="jquery-1.12.4.js"></script> -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <main>
+      <h1>A page</h1>
+      <!-- My favourite 90s music compilation is 'No Alternative' -->
+      <!-- Also... is it a button? -->
+      <img
+        src="doc.svg"
+        role="button"
+        width="200"
+        height="200"
+        alt="doc image"
+      />
+      <!-- This URL seems fishy. -->
+      <!-- Also, links to other domains should have the attribute `rel="noopener"` or `rel="noreferrer"`. -->
+      <p>
+        Valid according to the
+        <a target="_blank" href="htps://www.w3.org/"
+          >World Wide Web Consortium</a
+        >
+      </p>
+      <form method="post">
+        <label for="email">Enter your email (required):</label>
+        <!-- The label says it's required, but the input attributes don't agree. -->
+        <input type="email" id="email" required />
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <script>
+      document.body.style.background = "rgb(138, 255, 212)";
+
+      console.assert(document.body.style.background === "rgb(138, 255, 211)", {
+        errorMsg: "Nope, it's " + document.body.style.background,
+      });
+    </script>
+  </body>
+</html>

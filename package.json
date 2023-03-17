@@ -1,0 +1,42 @@
+{
+  "name": "secqa-ad-hoc-tests",
+  "version": "1.1.0",
+  "description": "files to fix",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha",
+    "test-responsiveness": "mocha --grep 'Responsiveness'",
+    "test-performance": "mocha --grep 'Performance metrics'",
+    "test-best-practices": "mocha --grep 'Best practices metrics'",
+    "test-seo": "mocha --grep 'SEO metrics'",
+    "test-a11y": "mocha --grep 'Accessibility'",
+    "test-html": "mocha --grep 'HTML validation'",
+    "test-links": "mocha --grep 'Link validation'",
+    "test-email": "mocha --grep 'Front-end form validation'",
+    "test-assert": "mocha --grep 'Errors and failed assertions'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HTTP5213/secqa-smoke-test"
+  },
+  "author": "Simon Borer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HTTP5213/secqa-smoke-test/issues"
+  },
+  "homepage": "https://github.com/HTTP5213/secqa-smoke-test#readme",
+  "devDependencies": {
+    "axe-core": "^4.6.3",
+    "broken-link-checker": "^0.6.7",
+    "chai": "^4.3.7",
+    "chai-as-promised": "^7.1.1",
+    "express": "^4.18.2",
+    "html-validator": "^6.0.1",
+    "jsdom": "^21.1.0",
+    "lighthouse": "^10.0.2",
+    "mocha": "^10.2.0",
+    "node-fetch": "^3.3.0",
+    "puppeteer": "^19.7.2"
+  }
+}
